@@ -19,9 +19,11 @@
 #Linux指令-絕對/相對路徑的移動
 
 1.絕對路徑：路徑的寫法『一定由根目錄 / 寫起』
-例如： /usr/share/doc 這個目錄(資料夾)。
+例如：/usr/share/doc 這個目錄(資料夾)。
+
 2.相對路徑：路徑的寫法『不是由 / 寫起』
-例如由 /usr/share/doc 要到 /usr/share/man 底下時，寫成：『cd ../man』，相對路徑意指『相對於目前工作目錄的路徑！』
+例如:由/usr/share/doc 要到 /usr/share/man 底下時，寫成：『cd ../man』，相對路徑意指『相對於目前工作目錄的路徑！』
+
 3.比較特殊的目錄
 .：代表此層目錄
 ..：代表上一層目錄
@@ -79,11 +81,13 @@ gzip FileName
 解壓縮：
 gunzip FileName.gz
 gzip -d FileName.gz
+
 2.xz
 壓縮：
 xz -z FileName
 解壓縮：
 xz -d FileName.xz
+
 3.tar.gz
 壓縮：tar -zcvf FileName.tar.gz DirName
 解壓縮：
@@ -96,6 +100,7 @@ tar -zxvf FileName.tar.g
 -name EX：找出為照片的檔案 → -name "*.jpg"
 -type EX：-type f → 一般檔案;-type d → 一般目錄
 -user EX：同時找兩個擁有者的檔案→-user user1 -o -user user2
+
 2.which filename
 -a：系統會顯示所有被找到的命令執行檔之完整路徑
 -n(文件名長度)指定文件名長度，指定的長度必須大於或等於所有文件中最長的文件名。
@@ -109,13 +114,16 @@ tar -zxvf FileName.tar.g
 -n → 由1開始對所有輸出的行數編號
 > → 將多個文件覆蓋到目標文件中
 >> → 將多個文件追加到目標文件中，不覆蓋
+
 2.tac=從最後一行開始顯示
 -r →將分隔符作為基礎正規表達是處理
 -s →使用String作為分隔符代替默認的換行符
+
 3.more=一頁一頁的顯示檔案內容
 ENTER：向下n行(default為1行)
 Ctrl+F/SPACE：向下滾動一屏
 Ctrl+B：返回上一屏
+
 4.less=與more類似，顯示檔案室允許用戶既可以 向前又可以向後翻頁閱讀檔案
 j →下一行
 k →上一行
@@ -123,6 +131,7 @@ G →移動到最後一行
 g →移動到第一行
 5.head 取出前面幾行(預設10行)
 -n：後面接數字，代表幾行的意思
+
 6.tail 取出後面幾行(預設10行)
 -n：後面接數字，代表幾行的意思
 -n+20：只想列出20行以後的資料
