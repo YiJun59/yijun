@@ -71,5 +71,22 @@ cp＝複製檔案或目錄
 -r：針對目錄下檔案做遞歸複製(整個目錄下每一個檔案複製到你想要的位置)
 -s：複製成符號連結檔(symbolic link)(複製成捷徑檔)
 
+#Linux指令-壓縮檔案
 
+1.gzip
+壓縮：
+gzip FileName
+解壓縮：
+gunzip FileName.gz
+gzip -d FileName.gz
+2.xz
+壓縮：
+xz -z FileName
+解壓縮：
+xz -d FileName.xz
+
+3.tar.gz
+壓縮：tar -zcvf FileName.tar.gz DirName
+解壓縮：
+tar -zxvf FileName.tar.g
 
